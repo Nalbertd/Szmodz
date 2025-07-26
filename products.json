@@ -2,8 +2,8 @@
   "site_info": {
     "title": "SOUZA MODZ",
     "description": "Mod Menu Injector para jogos",
-    "cover_image": "cover.jpg",
-    "profile_image": "profile.jpg"
+    "cover_image": "cover.png",
+    "profile_image": "profile.png"
   },
   "social_links": [
     {
@@ -27,21 +27,21 @@
       "id": 1,
       "name": "Wartk Auto Farm: 1 Dia",
       "price": "R$15,00",
-      "image": "product1.jpg",
+      "image": "product1.png",
       "whatsapp_message": "Olá, desejo finalizar minha compra com os seguintes detalhes: Produto: Wartk Auto Farm 1 DIA Quantidade: 1x Valor: R$15,00 Aguardo instruções para concluir o processo. Obrigado!"
     },
     {
       "id": 2,
       "name": "Wartk Auto Farm: 7 Dias",
       "price": "R$35,00",
-      "image": "product2.jpg",
+      "image": "product2.png",
       "whatsapp_message": "Olá, desejo finalizar minha compra com os seguintes detalhes: Produto: Wartk Auto Farm 7 DIAS Quantidade: 1x Valor: R$35,00 Aguardo instruções para concluir o processo. Obrigado!"
     },
     {
       "id": 3,
       "name": "Wartk Auto Farm: 30 Dias",
       "price": "R$70,00",
-      "image": "product3.jpg",
+      "image": "product3.png",
       "whatsapp_message": "Olá, desejo finalizar minha compra com os seguintes detalhes: Produto: Wartk Auto Farm 30 DIAS Quantidade: 1x Valor: R$70,00 Aguardo instruções para concluir o processo. Obrigado!"
     }
   ],
