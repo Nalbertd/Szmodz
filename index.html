@@ -5,41 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOUZA MODZ</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="profile-image-container">
-            <img id="profile-image" src="caminho/para/sua-imagem.jpg" alt="SOUZA MODZ">
+            <img id="profile-image" src="" alt="Profile Image">
         </div>
-        <h1>SOUZA MODZ</h1>
+        <h1 id="site-title"></h1>
     </header>
 
-    <section class="social-links">
-        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+    <section class="social-links" id="social-links">
+        <!-- Social links will be loaded here by JavaScript -->
     </section>
 
-    <section class="products">
-        <h2>NOSSOS PRODUTOS</h2>
-        <div class="products-grid">
-            <!-- Exemplo de produto - pode ser gerado por JavaScript -->
-            <div class="product-card">
-                <img src="caminho/para/produto1.jpg" alt="Produto 1" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-name">Nome do Produto</h3>
-                    <p class="product-price">R$ 99,90</p>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-        </div>
+    <section class="products" id="products">
+        <!-- Products will be loaded here by JavaScript -->
     </section>
 
-    <section class="about">
-        <h2>SOBRE NÓS</h2>
-        <p>Somos a SOUZA MODZ, especializados em moda autêntica e de qualidade. Nossa missão é oferecer produtos exclusivos que combinam estilo e conforto.</p>
+    <section class="about" id="about">
+        <h2 id="about-title"></h2>
+        <p id="about-description"></p>
     </section>
 
-    <footer
+    <footer>
+        <p>&copy; 2025 SOUZA MODZ. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
