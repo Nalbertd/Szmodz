@@ -5,174 +5,179 @@
     box-sizing: border-box;
 }
 
-/* Variáveis CSS atualizadas */
+/* Variáveis CSS simplificadas */
 :root {
-    --primary-bg: #0a0a0a;
+    --primary-bg: #121212;
+    --secondary-bg: #1e1e1e;
     --text-color: #ffffff;
     --text-dim: rgba(255, 255, 255, 0.7);
-    --button-bg: #1a1a1a;
-    --button-hover: #2a2a2a;
-    --accent-color: #00a8ff;
-    --accent-hover: #0088cc;
-    --border-radius: 16px;
-    --shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-    --gradient: linear-gradient(135deg, #00a8ff 0%, #0062ff 100%);
-    --section-spacing: 4rem;
+    --accent-color: #4e8cff;
+    --border-radius: 12px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Fonte atualizada */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+/* Fonte moderna mas simples */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: var(--primary-bg);
     color: var(--text-color);
-    line-height: 1.7;
-    min-height: 100vh;
-    overflow-x: hidden;
+    line-height: 1.5;
 }
 
-/* Header redesenhado */
+/* Header limpo */
 header {
     text-align: center;
-    padding: 3rem 1rem;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-    position: relative;
-    overflow: hidden;
+    padding: 2rem 1rem;
+    background-color: var(--secondary-bg);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 75% 30%, rgba(0, 168, 255, 0.1) 0%, transparent 50%);
-    z-index: -1;
-}
-
 .profile-image-container {
-    margin-bottom: 1.5rem;
-    position: relative;
-    display: inline-block;
-}
-
-.profile-image-container::after {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border-radius: 50%;
-    background: var(--gradient);
-    z-index: -1;
-    animation: rotate 6s linear infinite;
-}
-
-@keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    margin: 0 auto 1.5rem;
+    width: 120px;
+    height: 120px;
 }
 
 #profile-image {
-    width: 140px;
-    height: 140px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    border: 4px solid var(--primary-bg);
     object-fit: cover;
+    border: 3px solid var(--accent-color);
     box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
-}
-
-#profile-image:hover {
-    transform: scale(1.05);
 }
 
 h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
 }
 
-/* Links sociais redesenhados */
+/* Links sociais simples */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    padding: 2rem 1rem;
+    gap: 1rem;
+    padding: 1.5rem;
     flex-wrap: wrap;
-    background: rgba(10, 10, 10, 0.7);
-    backdrop-filter: blur(10px);
-    margin: 2rem auto;
-    max-width: 90%;
-    border-radius: var(--border-radius);
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .social-link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.05);
+    width: 48px;
+    height: 48px;
+    background-color: var(--secondary-bg);
     border-radius: 50%;
-    text-decoration: none;
     color: var(--text-color);
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-.social-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--gradient);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .social-link:hover {
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: 0 12px 30px rgba(0, 168, 255, 0.3);
+    background-color: var(--accent-color);
+    transform: scale(1.1);
 }
 
-.social-link:hover::before {
-    opacity: 0.2;
-}
-
-.social-link svg {
-    width: 28px;
-    height: 28px;
-    z-index: 1;
-}
-
-/* Seção de produtos redesenhada */
+/* Seção de produtos funcional */
 .products {
-    padding: var(--section-spacing) 1rem;
-    max-width: 1400px;
+    padding: 2rem 1rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .products h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background-color: var(--secondary-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1.25rem;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+/* Seção sobre limpa */
+.about {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+.about p {
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+/* Footer simples */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--secondary-bg);
+    color: var(--text-dim);
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsividade garantida */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+    
+    #profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
